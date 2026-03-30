@@ -31,9 +31,10 @@ This project investigates:
 
 ## 📂 Files
 
-- `demand_envelope.py` → Demand analysis and envelope modeling  
-- `rehab_vs_new.py` → Optimization-based comparison (MILP)  
-- `simulation.py` → Dispatch simulation and visualization  
+- `5_years_demand_envelope.py` → Demand analysis and envelope modeling  
+- `comparision_rehab_vs_new.py` → Optimization-based comparison (MILP)
+- `real_comparision_rehab_vs_new.py` → Optimization-based comparison (MILP)
+- `thesis_game_place.py` → Dispatch simulation and visualization  
 
 ---
 
