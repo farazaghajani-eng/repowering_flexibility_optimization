@@ -6,6 +6,7 @@ This folder contains input data used for power system repowering_flexibility ana
 
 ### 5_years_GBN_dataset.csv
 - mid-Hourly load demand (MW)
+ 
 This is for 5_years_demand_envelope.py
 
 ### ireland-2017_Data.csv
@@ -18,7 +19,7 @@ Both for thesis_game_place.py
  
 ### bus-data_IEEE_118-bus.csv
 - grid and 118-bus data
-- 
+ 
 ### demand-subperiod_IEEE_118-bus.csv
 - mid-Hourly load demand (MW)
 
