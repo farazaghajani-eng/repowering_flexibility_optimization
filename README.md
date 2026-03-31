@@ -1,88 +1,71 @@
-# ⚡ Power System Flexibility via Repowering
-## Techno-Economic & Optimization Framework for Renewable-Dominated Grids
+# Repowering Flexibility Optimization
 
-**Author:** Faraz Aghajani Aalizamini  
-M.Sc. Power Systems Engineering – University of Tehran  
+## Overview
+This repository presents a reproducible research framework developed as part of my M.Sc. thesis in Power Systems at the University of Tehran.
 
----
-
-## 🧠 Overview
-
-This repository presents a research-driven framework to evaluate whether aging thermal power plants should be repowered or replaced to enhance flexibility in renewable-rich power systems.
-
-The work integrates:
-- Data-driven demand modeling  
-- Optimization-based unit commitment  
-- Techno-economic comparison  
+The project investigates the **technical and economic feasibility of repowering aging power plants** to enhance flexibility in modern power systems with high penetration of renewable energy.
 
 ---
 
-## 🎯 Research Objective
+## Key Features
 
-Modern power systems face increasing variability due to renewable integration.
-
-This project investigates:
-
-- Can repowered units act as flexibility providers?
-- How do they compare with new investments?
-- What are the cost–flexibility trade-offs?
-
----
-
-## 📂 Files
-
-- `5_years_demand_envelope.py` → Demand analysis and envelope modeling  
-- `comparision_rehab_vs_new.py` → Optimization-based comparison (MILP)
-- `real_comparision_rehab_vs_new.py` → Optimization-based comparison (MILP)
-- `thesis_game_place.py` → Dispatch simulation and visualization  
+- Implementation of **IEEE-118 bus test system** for realistic large-scale analysis
+- Structured and well-documented **CSV datasets**
+- Modular Python scripts for:
+  - Data loading and preprocessing
+  - Simulation and analysis
+  - Result generation and comparison
+- Evaluation of:
+  - System dispatch behavior
+  - Cost differences across scenarios
+  - Flexibility enhancement strategies
+- Fully reproducible workflow linking **data → model → results**
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
-### 1. Demand Modeling
-- Multi-year data analysis  
-- Envelope extraction (min–max bounds)  
+The workflow follows a structured pipeline:
 
-### 2. Optimization
-- MILP Unit Commitment  
-- Constraints:
-  - Ramp limits  
-  - Startup costs  
-  - Generation bounds  
+1. **Data Preparation**
+   - IEEE-118 bus system data
+   - Scenario-based modifications
+   - Ireland Data close to MSc Thesis
+   - 5_years real demand for flexibility envelope
+  
+2. **Modeling & Simulation**
+   - Power system operation under different configurations
+   - Repowering strategies applied
+   - Flexibiliy Envelope to ensure demand
 
-### 3. Simulation
-- Dispatch visualization  
-- Scenario analysis  
+3. **Analysis**
+   - Cost evaluation
+   - Dispatch comparison
+   - Flexibility metrics
 
----
-
-## 🔍 Key Insights
-
-- Repowering can provide cost-effective flexibility  
-- Ramping constraints dominate system limitations  
-- Demand envelopes reduce modeling complexity  
-
----
-
-## 🛠️ Tools
-
-- Python  
-- Pandas / NumPy  
-- Matplotlib  
-- PuLP  
+4. **Visualization**
+   - Time-series plots
+   - Cost difference figures
+   - Scenario comparisons
 
 ---
 
-## 📈 Research Impact
+## Results
 
-This work contributes to:
-- Power system flexibility planning  
-- Energy transition strategies  
-- Repowering decision frameworks  
+The repository includes:
+- Cost comparison between scenarios
+- Dispatch behavior across time
+- Visualization of flexibility improvements
+
+All results are provided as:
+- Figures (in `/Results`)
+- PDF summaries (in `/Results`)
+
 
 ---
 
-## 📌 Author Note
+## Reproducibility
 
-This project reflects a system-level approach combining optimization, data analysis, and energy planning.
+All simulations can be reproduced by running the Python scripts sequentially
+
+
