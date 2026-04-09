@@ -1,0 +1,26 @@
+# Flexibility-Oriented Stochastic Unit Commitment (FSUC)
+
+This repository implements a two-stage stochastic unit commitment model with integrated storage dynamics and flexibility-aware operation.
+
+## Model Features
+
+- Two-stage stochastic optimization (scenario-based uncertainty)
+- Unit commitment with startup decisions
+- Ramp constraints and operational limits
+- Energy storage modeling (SOC dynamics, efficiency)
+- Load shedding with Value of Lost Load (VOLL)
+- Flexibility shortage quantification
+
+## Motivation
+
+High renewable penetration introduces variability and uncertainty in power systems. This model captures system flexibility limitations and quantifies the ability of generation and storage resources to meet demand under uncertainty.
+
+## Methodology
+
+The model is formulated as a mixed-integer linear program (MILP) using Pyomo and solved with GLPK.
+
+## How to Run
+
+```bash
+pip install -r requirements.txt
+python main.py
